@@ -1,10 +1,9 @@
-# PCI-DSS v3.2.1 Control Baseline for Red Hat Enterprise Linux 7
+# PCI-DSS v3.2.1 Control Baseline for Centos 7
 
-[![Build Status](https://travis-ci.org/RedHatOfficial/ansible-role-rhel7-pci-dss.svg?branch=master)](https://travis-ci.org/RedHatOfficial/ansible-role-rhel7-pci-dss)
-[![Ansible Role](https://img.shields.io/ansible/role/39710.svg)](https://galaxy.ansible.com/RedHatOfficial/rhel7_pci_dss)
-[![GitHub release](https://img.shields.io/github/release/RedHatOfficial/ansible-role-rhel7-pci-dss.svg)](https://github.com/RedHatOfficial/ansible-role-rhel7-pci-dss/releases/latest)
+[![Build Status](https://travis-ci.org/tem-hth/ansible-role-centos7-pci-dss?branch=master)](https://travis-ci.org/tem-hth/ansible-role-centos7-pci-dss)
 
-Ansible Role for PCI-DSS v3.2.1 Control Baseline for Red Hat Enterprise Linux 7
+
+Ansible Role for PCI-DSS v3.2.1 Control Baseline for Centos 7
 
 Profile Description:  
 Ensures PCI-DSS v3.2.1 security configuration settings are applied.
@@ -12,8 +11,6 @@ Ensures PCI-DSS v3.2.1 security configuration settings are applied.
 The tasks that are used in this role are generated using OpenSCAP.
 See the OpenSCAP project for more details on Ansible playbook generation at [https://github.com/OpenSCAP/openscap](https://github.com/OpenSCAP/openscap)
 
-To submit a fix or enhancement for an Ansible task that is failing or missing,
-see the ComplianceAsCode project at [https://github.com/ComplianceAsCode/content](https://github.com/ComplianceAsCode/content)
 
 # Requirements
 
@@ -29,20 +26,7 @@ N/A
 
 # Example Playbook
 
-Run `ansible-galaxy install RedHatOfficial.rhel7_pci_dss` to
-download and install the role. Then, you can use the following playbook snippet to run the Ansible role:
 
-    - hosts: all
-      roles:
-         - { role: RedHatOfficial.rhel7_pci_dss }
-
-Next, check the playbook using (on the localhost) the following example:
-
-    ansible-playbook -i "localhost," -c local --check playbook.yml
-
-To deploy it, use (this may change configuration of your local machine!):
-
-    ansible-playbook -i "localhost," -c local playbook.yml
 
 # License
 
