@@ -212,9 +212,7 @@
 
 - name: Set Fact - Installed GPG Fingerprints
   set_fact:
-    gpg_installed_fingerprints: '{{ gpg_fingerprints.stdout | regex_findall(''^pub.*
-
-      (?:^fpr[:]*)([0-9A-Fa-f]*)'', ''\1'') | list }}'
+    gpg_installed_fingerprints: '{{ gpg_fingerprints.stdout | regex_findall(''^pub.*(?:^fpr[:]*)([0-9A-Fa-f]*)'', ''\1'') | list }}'
   tags:
   - ensure_redhat_gpgkey_installed
   - high_severity
