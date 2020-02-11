@@ -171,7 +171,7 @@
   - PCI-DSS-Req-6.2
   - CJIS-5.10.4.1
   when:
-  - ansible_distribution == "Redhat"
+  - ansible_facts['distribution'] == "Redhat"
   - no_reboot_needed | bool
   - restrict_strategy | bool
   - high_severity | bool
@@ -202,7 +202,7 @@
   - PCI-DSS-Req-6.2
   - CJIS-5.10.4.1
   when:
-  - ansible_distribution == "Centos"
+  - ansible_facts['distribution'] == "CentOS"
   - no_reboot_needed | bool
   - restrict_strategy | bool
   - high_severity | bool
