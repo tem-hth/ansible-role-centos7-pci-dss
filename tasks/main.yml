@@ -1714,8 +1714,8 @@
     regexp: (GRUB_CMDLINE_LINUX=.*)"
     replace: \1 audit=1"
   when:
-  - argcheck.rc != 0
   - ansible_virtualization_role != "guest" or ansible_virtualization_type != "docker"
+  - argcheck.rc != 0
   - grub2_audit_argument | bool
   - restrict_strategy | bool
   - reboot_required | bool
