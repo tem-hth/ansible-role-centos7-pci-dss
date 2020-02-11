@@ -1,5 +1,5 @@
 ---
-# defaults file for rhel7_pci_dss
+# defaults file for centos7_pci_dss
 inactivity_timeout_value: '900'
 var_auditd_max_log_file: '6'
 var_auditd_num_logs: '5'
